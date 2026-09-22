@@ -1,0 +1,32 @@
+idf_component_register(
+    SRCS
+        "main.cpp"
+        "src/auth.c"
+        "src/config_manager.cpp"
+        "src/display.cpp"
+        "src/netconsole.c"
+        "src/pmic.cpp"
+        "src/app_stream_buffer.c"
+        "src/string_matcher.c"
+        "src/usb_cdc.c"
+        "src/web_server.cpp"
+        "src/wifi_manager.cpp"
+        "src/wol.c"
+        "src/zabbix.c"
+    INCLUDE_DIRS
+        "include"
+    REQUIRES
+        nvs_flash
+        esp_wifi
+        esp_event
+        esp_http_server
+        lwip
+        driver
+        esp_timer
+        m5stack__m5unified
+        espressif__esp_tinyusb
+    EMBED_TXTFILES
+        "src/index.html"
+        "src/xterm.js"
+)
+

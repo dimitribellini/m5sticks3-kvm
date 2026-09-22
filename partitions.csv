@@ -1,0 +1,6 @@
+# ESP32-S3 8MB Partition Table for M5StickS3 KVM (Monolithic - No SPIFFS/FAT)
+# Name,   Type, SubType, Offset,   Size,     Flags
+nvs,      data, nvs,     0x9000,   0x5000,
+otadata,  data, ota,     0xe000,   0x2000,
+app0,     app,  ota_0,   0x10000,  0x3c0000,
+app1,     app,  ota_1,   0x3d0000, 0x3c0000,
