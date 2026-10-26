@@ -1,3 +1,12 @@
+# Rust / Cargo
+/target/
+target/
+**/*.rs.bk
+*.pdb
+
+# Gitea template files
+.gitea/workflows/*.template
+
 # Environments
 .env
 .env.*
@@ -27,12 +36,3 @@ build/
 
 # Logs
 *.log
-
-# PlatformIO & ESP-IDF
-.pio/
-sdkconfig
-sdkconfig.*
-dependencies.lock
-managed_components/
-*.bin
-
